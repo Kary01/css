@@ -5,12 +5,14 @@ li[class]{
 /* podemos relacionar cualquier 
 selector con un atributo de clase*/
 
+
 li[class="attribute"]{
     background-color: cadetblue;
 }
 
 /* relaciona un selector con una clase 
 de valor "attribute" */
+
 
 li[class~="attribute"]{
     color:red;
@@ -19,3 +21,27 @@ li[class~="attribute"]{
 /* coincidirá con una clase
 pero también con un valor que contenga 
 el valor "attribute" */
+
+
+li[class^="other"]{
+    text-decoration: line-through;
+}
+
+/* relaciona cualquier valor de atributo 
+que empieza con "other" */
+
+
+li[class$="b"]{
+    text-transform: uppercase;
+}
+
+/* relaciona cualquier valor de atributo 
+que termine con "b" */
+
+
+li[class*="o"]{
+    text-align: right;
+}
+
+/* relaciona cualquier valor de atributo 
+que contiene "o" en cualquier posición */
