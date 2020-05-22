@@ -1,0 +1,20 @@
+body{
+    color: salmon;
+    font-size: 20px;
+}
+
+p{
+    font-size: 15px;
+}
+
+ul{
+    color: green;
+}
+
+.item{
+    color: blueviolet;
+}
+
+.otheritem:hover{
+    color:pink;
+}

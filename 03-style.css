@@ -1,0 +1,47 @@
+body{
+    max-width: 400px;
+    margin: 0 auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1{
+    text-align: center;
+    color: cornflowerblue;
+    font-size: 40px;
+}
+
+p{
+    font-size: 1em;
+    text-align: justify;
+}
+
+.job-title{
+    color: darkgrey;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+h2{
+    font-size: 20px;
+}
+
+.contact{
+    border: 1px solid gray;
+}
+
+li{
+    list-style-type: none;
+    padding: 1%;
+}
+
+li a:link{
+    color: gray;
+}
+
+li a:visited{
+    color: cornflowerblue;
+}
+
+li a:hover{
+    text-decoration: none;
+}

@@ -1,0 +1,62 @@
+*{
+    margin: 10;
+}
+
+/*El selector universal se representa con un asterisco (*) 
+y selecciona cualquier elemento del documento */
+
+span{
+    background-color: lightseagreen;
+}
+
+strong{
+    color: crimson;
+}
+
+em{
+    color: coral;
+}
+
+/*Se alicar´estilo a todas las instancias que estén
+delimitadas por los elementos 'span' 'strong' 'em'*/
+
+.brown-color{
+    color: brown;
+}
+
+.pink-color{
+    color: pink;
+}
+
+/* El selector de clase comienza con un punto (.) 
+y selecciona todo aquello del documento que está 
+afectado por esa clase */
+
+.notebox {
+    border: 4px solid #666;
+    padding: .5em;
+  }
+  
+.notebox.warning {
+    border-color: orange;
+    font-weight: bold;
+  }
+  
+.notebox.danger {
+    border-color: red;
+    font-weight: bold;
+  }
+      
+/* Se puede aplicar más de una clase a un elemento y 
+delimitarlos de forma individual o seleccionar el elemento 
+cuando todas las clases están presentes en el selector. 
+Puede ser útil cuando se trabaja con componentes que se pueden 
+combinar de maneras diferentes en tu página web.*/
+
+#user-form{
+    color: chocolate;
+    text-align: center;
+}
+
+/* un selector de ID se puede utilizar una sola vez en cada documento.
+Comienza con el simbolo numerico (#)*/

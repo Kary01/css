@@ -1,0 +1,31 @@
+body{
+    background-color: burlywood;
+}
+
+h1{
+    color: seagreen;
+    text-align: center;
+    font-size: 30px;
+}
+
+p{
+    color: purple;
+}
+
+ul li{
+    color: seashell;
+    list-style-type: square;
+}
+
+.special{
+    color:darkred;
+}
+
+p li{
+    font-size: 20px;
+}
+
+/*El elemento "p" tendrá el color de la clase "special" 
+la declaración que lo establece aparece más adelante en la hoja de estilo, 
+y los estilos posteriores anulan a los anteriores. 
+Así funciona la regla de la cascada.*/

@@ -1,0 +1,51 @@
+h1{
+    color: royalblue;
+}
+
+p, li{
+    color: coral;
+}
+
+li{
+    list-style-type: none; 
+}
+/*cambia el estilo predeterminado*/
+
+li.special,
+span.special{ 
+    color: brown;
+    font-weight: bold;
+}
+
+/*la sintaxis significa, determina cualquier elemento li y span que tenga una clase especial*/
+
+/*algunas clases pueden aplicarse a muchos elementos y no tener que seguir editando el CSS 
+cada vez que algo nuevo necesita adoptar ese estilo. 
+Por lo tanto, a veces es mejor eludir el elemento y simplemente referirse a la clase, 
+a menos que sepas que vas a querer crear algunas reglas especiales para un solo elemento*/
+
+li em{
+    color: blueviolet;
+} 
+/*Este selector separará cualquier elemento <em> que esté dentro de (un descendiente) <li>.*/
+
+header + main{
+    font-size: 200%;
+} 
+/* formato a un elemento que venga directamente a continuación de otro 
+que esté en el mismo nivel de jerarquía en el HTML*/
+
+a:link{
+    color:pink;
+}
+
+a:visited{
+    color:green;
+}
+
+a:hover{
+    text-decoration: line-through;
+}
+
+/*dar formato según el estado*/
+

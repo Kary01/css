@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Kary Ruiz">
+    <meta name="description" content="Página de práctica
+    para comprender los conceptos de cascada, especificidad y herencia en CSS">
+    <title>Práctica 04</title>
+    <link rel="shortcut icon" href="images/pokemon-pokeball.png" type="image/x-icon">
+    <link rel="stylesheet" href="04-style.css">
+</head>
+<body>
+    <header>
+        <h1>CASCADA, ESPECIFICIDAD Y HERENCIA</h1>
+    </header>
+    <main>
+        <p>Este es un párrafo de ejemplo con cascada.</p>
+        <p class="paragraph">Este es un ejemplo de especificidad.</p>
+
+        <ul>
+            <li>Punto 1</li>
+            <li class="item">Punto 2</li>
+            <ul>
+                <li>Punto 2.1</li>
+                <li class="otheritem">Punto 2.2</li>
+                <ul>
+                    <li>Punto 2.2.1</li>
+                    <li>Punto 2.2.2</li>
+                </ul>
+            </ul>
+            <li>Punto 3</li>
+            <li>Punto 4</li>
+        </ul>
+    </main>
+
+</body>
+</html>
