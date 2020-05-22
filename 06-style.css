@@ -1,0 +1,21 @@
+li[class]{
+    font-size: 200%;
+}
+
+/* podemos relacionar cualquier 
+selector con un atributo de clase*/
+
+li[class="attribute"]{
+    background-color: cadetblue;
+}
+
+/* relaciona un selector con una clase 
+de valor "attribute" */
+
+li[class~="attribute"]{
+    color:red;
+}
+
+/* coincidirá con una clase
+pero también con un valor que contenga 
+el valor "attribute" */
