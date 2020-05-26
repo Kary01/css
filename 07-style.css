@@ -1,0 +1,11 @@
+a[title]{
+    border: 3px solid pink;
+}
+
+a[href*="contact"]{
+    border: 3px solid orange;
+}
+
+a[href^="https"]{
+    border: 3px solid green;
+}
