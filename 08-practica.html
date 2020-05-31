@@ -116,6 +116,53 @@
             <input type="button" value="Enviar">
         </form>
 
+        <div class="type">
+            <h2>Encabezado</h2>
+            <p>Párrafo 1</p>
+            <p>Párrafo 2</p>
+        </div>
+
+        <div id="fullscreen">
+            <h1>Demostración :fullscreen</h1>
+            <p>Este texto se pondrá grande y rojo cuando el navegador esté en modo de pantalla completa.</p>
+            <button id="fullscreen-button">Entrar en pantalla completa</button>
+        </div>
+
+        <div id="focus">
+            <input class="red-input" value="Voy a ser de color rojo cuando enfoque."><br>
+            <input class="blue-input" value="Voy a ser de color azul cuando enfoque.">
+        </div>
+
+        <div class="focus-within">
+            <p>Try typing into this form.</p>
+
+            <form>
+                <label for="given_name">Given Name:</label>
+                <input id="given_name" type="text">
+                <br>
+                <label for="family_name">Family Name:</label>
+                <input id="family_name" type="text">
+            </form>
+        </div>
+
     </main>
+
+    <!-- código para mostar en pantalla completa -->
+    <script>
+        var fullscreenButton = document.getElementById("fullscreen-button"); 
+        var fullscreenDiv = document.getElementById("fullscreen"); 
+        var fullscreenFunc = fullscreenDiv.requestFullscreen; 
+        if (!fullscreenFunc) { 
+            ['mozRequestFullScreen', 'msRequestFullscreen', 'webkitRequestFullScreen'].forEach(function (req) { 
+                fullscreenFunc = fullscreenFunc || fullscreenDiv[req]; 
+            }); 
+        } 
+        
+        function enterFullscreen() { 
+            fullscreenFunc.call(fullscreenDiv); 
+        } 
+        
+        fullscreenButton.addEventListener('click', enterFullscreen); 
+    </script>
 </body>
 </html>

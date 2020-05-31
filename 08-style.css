@@ -55,6 +55,56 @@ a:active{ /*Cuando se usa un mouse, la "activación" generalmente comienza cuand
     color: #000;
   }
 
+  .type p:first-of-type{ /* representa el primer elemento de su tipo entre un grupo de elementos hermanos. */
+    color: red;
+    font-style: italic;
+  }
+
+
+  #fullscreen:fullscreen {
+      /*  representa un elemento que se muestra cuando el navegador está en modo de pantalla completa. */
+    padding: 42px;
+    background-color: pink;
+    border:2px solid #f00;
+    font-size: 200%;
+  }
+  
+  #fullscreen:fullscreen > h1 {
+    color: red;
+  }
+  
+  #fullscreen:fullscreen > p {
+    color: darkred;
+  }
+  
+  #fullscreen:fullscreen > button {
+    display: none;
+  }
+
+  #focus .red-input:focus{
+      border-color: red;
+  }
+
+  #focus .blue-input:focus{
+      border-color: blue;
+  }
+
+  .focus-within form { 
+    /* representa un elemento que ha recibido el foco o que contiene 
+    un elemento que ha recibido el foco. */
+    border: 1px solid;
+    color: gray;
+    padding: 4px;
+  }
+  
+  .focus-within form:focus-within {
+    background: #ff8;
+    color: black;
+  }
+  
+  .focus-within input {
+    margin: 4px;
+  }
 
 /*Una pseudoclase es un selector que marca 
 los elementos que están en un estado específico, 
