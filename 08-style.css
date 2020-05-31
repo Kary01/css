@@ -1,0 +1,71 @@
+article p:first-child{
+    font-size: 150%;
+    font-weight: bold;
+}
+
+article p:last-child{
+    font-size: 100%;
+    font-style: italic;
+}
+
+article p::first-line{
+    background-color: cadetblue;
+}
+
+a:active{ /*Cuando se usa un mouse, la "activación" generalmente comienza cuando el usuario presiona el botón*/
+    color: coral;
+}
+
+.ckecked input:checked + label{ 
+    /*El usuario puede activar este estado marcando/seleccionando un elemento, 
+    o desactivándolo desmarcando/deseleccionando el elemento.*/
+    font-size: 1.3em;
+    color: red;
+}
+
+.default input:default + label{
+    /*Representa cualquier elemento de formulario que sea el predeterminado 
+    entre un grupo de elementos relacionados. */
+    color: crimson;
+}   
+
+:dir(ltr) { /* coincide con los elementos en función de la direccionalidad del texto contenido en ellos.*/
+    background-color: burlywood;
+  }
+  
+:dir(rtl) {
+    background-color: powderblue;
+  }
+
+  input:disabled { /* representa a cualquier elemento deshabilitado. */
+    background: #c3a;
+  }
+
+  .box { /* representa cualquier elemento que no tenga hijos. */
+    background: pink;
+    height: 50px;
+    width: 50px;
+  }
+  
+  .box:empty {
+    background: gold;
+  }
+
+  input:enabled { /* representa cualquier elemento habilitado. */
+    color: #000;
+  }
+
+
+/*Una pseudoclase es un selector que marca 
+los elementos que están en un estado específico, 
+Tienden a actuar como si hubieras aplicado una 
+clase en una parte determinada del documento y, 
+a menudo, ayudan a reducir el exceso de clases 
+y proporcionan un marcado más flexible y fácil 
+de mantener.Comienza con dos puntos (:)*/
+
+/*actúan como si hubieras añadido un elemento HTML 
+totalmente nuevo en el marcado, en lugar de haber 
+aplicado una clase nueva a los elementos presentes. 
+Los pseudoelementos empiezan con un doble signo 
+de dos puntos ::.*/

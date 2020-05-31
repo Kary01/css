@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Kary Ruiz">
+    <meta name="description" content="Página de practica sobre pseudoclases y pseudoelementos en CSS">
+    <link rel="shortcut icon" href="images/pokeball.ico" type="image/x-icon">
+    <link rel="stylesheet" href="08-style.css">
+    <title>Practica 08</title>
+</head>
+<body>
+    <header>
+        <h1>Pseudoclases y Pseudoelementos</h1>
+    </header>
+    <main>
+        <article>
+            <p>Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi tomatillo
+                    melon azuki bean garlic.</p>
+        
+            <p>Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard
+                    greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.</p>
+        </article> 
+
+        <article>      
+            <p>Meatball tongue tri-tip chuck, hamburger jowl andouille sirloin kielbasa. Brisket filet mignon pancetta, porchetta 
+                alcatra doner strip steak cupim drumstick. Filet mignon boudin sirloin turducken chislic venison salami. 
+                Pastrami turducken chuck, ham hock shoulder fatback kevin ribeye. Jerky fatback pork loin, beef pancetta strip 
+                steak burgdoggen. Hamburger bacon ham hock fatback beef ribs capicola kielbasa corned beef shankle turkey doner chicken.</p>
+                
+            <p>Alcatra capicola porchetta prosciutto, jowl corned beef ball tip shank shankle flank. Pork belly pancetta jowl ground 
+                round porchetta jerky tenderloin kevin rump ham hock. Spare ribs ham hock cupim venison jowl beef ribs jerky hamburger 
+                shankle ball tip bresaola pork loin turducken pig alcatra. Ham hock tri-tip picanha hamburger pig shank capicola 
+                chicken sirloin flank drumstick shankle sausage prosciutto. Shankle meatloaf jowl leberkas strip steak andouille 
+                sirloin tail kevin flank chislic pig.</p>
+                
+            <p>Biltong jowl pig, pastrami leberkas sirloin pork loin chislic kielbasa frankfurter. Sausage andouille landjaeger cupim 
+                capicola rump, bresaola ribeye turkey tail fatback ham hock beef chuck. Biltong tail sirloin chislic pancetta short loin. 
+                Meatloaf jowl capicola, pastrami kevin cow beef ribs tail pig tongue ham tri-tip. Ham landjaeger prosciutto picanha 
+                salami kielbasa boudin meatball shankle pork. Flank corned beef tongue tri-tip.</p>
+        </article>
+
+        <section>
+            <p>Meatball tongue tri-tip chuck, hamburger jowl andouille sirloin kielbasa. Brisket filet mignon pancetta, porchetta 
+                alcatra doner strip steak cupim drumstick. Filet mignon boudin sirloin turducken chislic venison salami. 
+                Pastrami turducken chuck, ham hock shoulder fatback kevin ribeye. Jerky fatback pork loin, beef pancetta strip 
+                steak burgdoggen. Hamburger bacon ham hock fatback beef ribs capicola kielbasa corned beef shankle turkey doner chicken.</p>
+                
+            <p>Alcatra capicola porchetta prosciutto, jowl corned beef ball tip shank shankle flank. Pork belly pancetta jowl ground 
+                round porchetta jerky tenderloin kevin rump ham hock. Spare ribs ham hock cupim venison jowl beef ribs jerky hamburger 
+                shankle ball tip bresaola pork loin turducken pig alcatra. Ham hock tri-tip picanha hamburger pig shank capicola 
+                chicken sirloin flank drumstick shankle sausage prosciutto. Shankle meatloaf jowl leberkas strip steak andouille 
+                sirloin tail kevin flank chislic pig.</p>
+                
+            <p>Biltong jowl pig, pastrami leberkas sirloin pork loin chislic kielbasa frankfurter. Sausage andouille landjaeger cupim 
+                capicola rump, bresaola ribeye turkey tail fatback ham hock beef chuck. Biltong tail sirloin chislic pancetta short loin. 
+                Meatloaf jowl capicola, pastrami kevin cow beef ribs tail pig tongue ham tri-tip. Ham landjaeger prosciutto picanha 
+                salami kielbasa boudin meatball shankle pork. Flank corned beef tongue tri-tip.</p>
+        </section>
+
+        <section>
+            <ul>
+                <li><a href="#">Flank corned beef tongue tri-tip.</a></li>
+                <li><a href="#">Flank corned beef tongue tri-tip.</a></li>
+                <li><a href="#">Flank corned beef tongue tri-tip.</a></li>
+            </ul>
+
+        </section>
+
+        <div class="ckecked">
+            <input type="radio" name="my-input" id="yes">
+            <label for="yes">Yes</label>
+          
+            <input type="radio" name="my-input" id="no">
+            <label for="no">No</label>
+        </div>
+        
+        <div class="default">
+            <input type="radio" name="my-input" id="apple">
+            <label for="apple">Apple</label>
+          
+            <input type="radio" name="my-input" id="banana">
+            <label for="banana">Banana</label>
+
+            <input type="radio" name="my-input" id="mango" checked>
+            <label for="mango">Mango</label>
+
+            <input type="radio" name="my-input" id="blueberry">
+            <label for="blueberry">Blueberry</label>
+        </div>
+        
+        <div dir="rtl">
+            <span>test1</span>
+            <div dir="ltr">test2
+              <div dir="auto">עִבְרִית</div>
+            </div>
+        </div>
+
+        <div>
+            <input type="text" name="example" placeholder="Your message">
+            <input type="text" name="example" placeholder="Your message" disabled>
+            <input type="text" name="example" placeholder="Your message">
+        </div>
+
+        <div class="box"></div> <!-- empty -->
+        <div class="box">Not empty</div>
+        <div class="box"></div> <!-- empty -->
+
+        <form action="url_of_form">
+            <label for="FirstField">Primer campo (habilitado):</label>
+            <input type="text" id="FirstField" value="Lorem"><br>
+          
+            <label for="SecondField">Segundo campo (deshabilitado):</label>
+            <input type="text" id="SecondField" value="Ipsum" disabled="disabled"><br>
+          
+            <input type="button" value="Enviar">
+        </form>
+
+    </main>
+</body>
+</html>
