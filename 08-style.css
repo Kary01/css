@@ -1,3 +1,7 @@
+div{
+  margin: 23px;
+}
+
 article p:first-child{
     font-size: 150%;
     font-weight: bold;
@@ -106,6 +110,51 @@ a:active{ /*Cuando se usa un mouse, la "activación" generalmente comienza cuand
     margin: 4px;
   }
 
+  .hover a:hover{
+    /*Generalmente se activa cuando el usuario se 
+    desplaza sobre un elemento con el cursor*/
+    background-color: powderblue;
+    transition: background-color .5s;
+  }
+
+  .range input:in-range{
+    /* representa un elemento <input> cuyo valor actual 
+    se encuentra dentro de los límites de rango especificados 
+    por los atributos min y max. */
+    background-color: aquamarine;
+  }
+
+  .range input:out-of-range{
+    background-color: crimson;
+  }
+
+  input:in-range + label::after {
+    content: ' bien.';
+  }
+  
+  input:out-of-range + label::after {
+    content: ' fuera de rango!';
+  }
+
+  .invalid input:invalid{
+    /*representa cualquier elemento <input> u otro elemento 
+    <form> cuyos contenidos no se puedan validar.*/
+    background-color:  coral;
+  }
+
+  .invalid input:valid{
+    background-color: chartreuse;
+  }
+
+  .table td{
+    border: 1px solid black;
+  }
+
+  .table td:nth-child(4n){
+    /*coincide con uno o más elementos en función 
+    de su posición entre un grupo de hermanos.*/
+    background-color: cadetblue;
+  }
 /*Una pseudoclase es un selector que marca 
 los elementos que están en un estado específico, 
 Tienden a actuar como si hubieras aplicado una 
