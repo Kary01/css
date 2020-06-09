@@ -28,8 +28,8 @@ h1{
 }
 
 .example-two h3{
-    background-color: white;
-    opacity: 0.5;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: black;
     padding: 20px;
     
 }
@@ -44,8 +44,8 @@ h1{
 }
 
 .example-three h3{
-    background-color: white;
-    opacity: 0.5;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: black;
     padding: 20px;
 }
 
@@ -59,7 +59,7 @@ h1{
 }
 
 .example-four h3{
-    background-color: dodgerblue;
-    opacity: 0.5;
+    background-color: rgba(100, 190, 226, 0.342);
+    color: black;
     padding: 20px;
 }
