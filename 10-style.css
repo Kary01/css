@@ -1,0 +1,64 @@
+h1{
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.example-one{
+    background-color: cornflowerblue;
+    color: white;
+    width: 500px;
+    height: 150px;
+    margin: 30px;
+    padding: 30px;
+}
+
+.example-one h3{
+    background-color: cadetblue;
+    padding: 20px;
+    
+}
+
+.example-two{
+    background-image: url('images/photo-1590503002742-398821ddb52a.jpg');
+    width: 500px;
+    height: 150px;
+    margin: 30px;
+    padding: 30px;
+}
+
+.example-two h3{
+    background-color: white;
+    opacity: 0.5;
+    padding: 20px;
+    
+}
+
+.example-three {
+    background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+    width: 500px;
+    height: 150px;
+    margin: 30px;
+    padding: 30px;
+}
+
+.example-three h3{
+    background-color: white;
+    opacity: 0.5;
+    padding: 20px;
+}
+
+.example-four {
+    border: 1px solid purple;
+    width: 500px;
+    height: 150px;
+    margin: 30px;
+    padding: 30px;
+    border-radius: 0.7em;
+}
+
+.example-four h3{
+    background-color: dodgerblue;
+    opacity: 0.5;
+    padding: 20px;
+}
