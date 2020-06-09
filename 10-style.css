@@ -20,6 +20,7 @@ h1{
 
 .example-two{
     background-image: url('images/photo-1590503002742-398821ddb52a.jpg');
+    background-size: cover;
     width: 500px;
     height: 150px;
     margin: 30px;
