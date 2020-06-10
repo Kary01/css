@@ -24,6 +24,7 @@ h1{
     width: 200px;
     height: 200px;
     writing-mode: vertical-rl;
+    inline-size: 100px;
 }
 
 /*Un modo de escritura en CSS se refiere a si el texto se ejecuta 
