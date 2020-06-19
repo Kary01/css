@@ -1,0 +1,74 @@
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+}
+
+h1{
+    font-family: sans-serif;
+    text-align: center;
+    background-color: coral;
+    color: white;
+    margin: 30px;
+}
+
+h2{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: brown;
+}
+
+.wrapper{
+    margin: 50px;
+    padding: 10px;
+    width: 70vw;
+    background-color: cadetblue;
+    font-size: 1em;
+    border-radius: 10px;
+}
+
+.boxPx{ /*El ancho será el mismo aunque lo demás cambie*/
+    width: 200px;
+    margin: 10px;
+    padding: 10px;
+    background-color: azure;
+}
+
+.boxVw{ /*El ancho será relativo a la ventana del navegador*/
+    width: 30vw;
+    margin: 10px;
+    padding: 10px;
+    background-color: azure;
+}
+
+.boxEm{ /*Es relativo al ancho de la letra*/
+    width: 20em;
+    margin: 10px;
+    padding: 10px;
+    background-color: azure;
+}
+
+.ems li{ /*tomará el tamaño respecto al elemento padre, aumentará su tamaño progresivamente*/
+    font-size: 1.3em;
+}
+
+.rems{ /*tomará el tamaño raíz, cambiará si el elemento raíz cambia*/
+    font-size: 1.3rem;
+}
+
+.percent{
+    width: 500px;
+    border: 3px solid black;
+}
+
+.px{ /*El ancho se mantendrá relativo aunque el elemento padre cambie*/
+    width: 200px;
+    background-color: darkgray;
+    margin: 10px;
+    padding: 10px;
+}
+
+.per{
+    width: 40%; /*cambiará en proporción al elemento padre*/
+    background-color: darkgray;
+    margin: 10px;
+    padding: 10px;
+}
