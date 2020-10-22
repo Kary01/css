@@ -1,0 +1,94 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+h1{
+    font-size: 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+.box{ 
+    /*una altura establecida puede causar desbordamiento de contenido*/
+    margin-top: 20px;
+    border: 5px solid darkcyan;
+    height: 150px;
+    width: 200px;
+    font-size: 1.6rem;
+}
+
+.porcent{ 
+    margin-top: 20px;
+    border: 5px solid darkcyan;
+    height: 150px;
+
+    width: 50%;
+    /*En el caso de una caja dentro de otro contenedor, si a la caja secundaria 
+    le asignas un porcentaje al ancho, será un porcentaje del ancho del contenedor principal.*/
+}
+
+.padding{
+    margin-top: 20px;
+    border: 5px solid darkcyan;
+    height: 150px;
+    width: 200px;
+    font-size: 1.6rem;
+
+    padding: 10%;
+    /*Cuando utilizas el margen y el área de relleno en porcentajes, 
+    el valor se calcula a partir ancho del elemento cuando se trabaja en un lenguaje horizontal.*/
+}
+
+.height{
+    /*La caja siempre tendrá al menos esta altura, 
+    pero crecerá si hay más contenido del que la caja puede contener.*/
+    margin-top: 20px;
+    border: 5px solid darkcyan;
+    min-height: 150px;
+    width: 200px;
+    font-size: 1.6rem;
+}
+
+.width{
+    margin-top: 20px;
+    border: 5px solid darkcyan;
+    min-height: 50px;
+    width: 50px;
+}
+
+.width img{
+    /*es para reducir el tamaño de las imágenes si no hay
+    suficiente espacio para mostrarlas en su ancho intrínseco*/
+    max-width: 100%;
+}
+
+.window{
+    /*Con estas unidades puedes establecer tamaños relativos 
+    a la ventana gráfica del usuario.*/
+    border: 5px solid darkcyan;
+    width: 50vw;
+    height: 50vh;
+    margin-top: 20px;
+}
