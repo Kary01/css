@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Práctica sobre el comportamiento de imágenes, medios y elementos de formulario">
+    <meta name="author" content="Kary Ruiz">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/pokeball.ico" type="image/x-icon">
+    <link rel="stylesheet" href="14-style.css">
+    <title>Práctica 14</title>
+</head>
+<body>
+    <header>
+        <h1>Imágenes, medios y Elementos de formulario</h1>
+    </header>
+    <main>
+        <div class="wrapper">
+            <div class="box">
+                <img class="cover" src="images/photo-1590503002742-398821ddb52a.jpg" alt="ejemplo">
+            </div>
+            <div class="box">
+                <img class="contain" src="images/photo-1590503002742-398821ddb52a.jpg" alt="ejemplo">
+            </div>
+            <div class="box">
+                <img class="fill" src="images/photo-1590503002742-398821ddb52a.jpg" alt="ejemplo">
+            </div>
+        </div>
+        <div class="grid">
+            <picture>
+                <img src="images/photo-1590503002742-398821ddb52a.jpg" alt="ejemplo">
+            </picture>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <form action="#">
+            <label for="name">
+                <span>¿Cuál es el nombre?</span>
+                <input type="text" id="name" name="name">
+            </label>
+            <label for="pais">
+                <span>¿Cuál es tu país?</span>
+                <input list="pais" name="pais">
+                <datalist id="pais">
+                    <option value="México"></option>
+                    <option value="EU"></option>
+                    <option value="Colombia"></option>
+                    <option value="Chile"></option>
+                </datalist>
+            </label>
+            <label for="comments">
+                <textarea name="comments" id="comments" cols="30" rows="4" placeholder="comentarios"></textarea>
+            </label>
+        </form>
+    </main>
+</body>
+</html>

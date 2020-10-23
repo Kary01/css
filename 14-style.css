@@ -1,0 +1,118 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*una buena idea establecer los márgenes 
+y el área de relleno en 0 para todos los elementos, 
+y luego establecerlos de nuevo al diseñar 
+cada uno de los controles de formulario.*/
+
+button, 
+input, 
+datalist, 
+textarea { 
+  font-size: 100%; 
+  box-sizing: border-box; 
+  padding: 0; margin: 10px; 
+} 
+
+textarea { 
+  overflow: auto; 
+} 
+
+header{
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+h1{
+    font-size: 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.box{
+    margin-top: 10px;
+    padding: 5%;
+    width: 40vw;
+    height: 40vh;
+    border: 1px solid darkgrey;
+}
+
+.box img{
+    height: 100%;
+    width: 100%;
+}
+
+/*el elemento de reemplazo puede dimensionarse para 
+adaptarse a una caja de varias maneras.*/
+
+.cover{
+    /*reduce el tamaño de la imagen a la vez que mantiene 
+    la relación de aspecto hasta que rellena toda la caja*/
+    object-fit: cover;
+}
+
+.contain{
+    /*a imagen se reduce hasta que es lo bastante pequeña 
+    para caber dentro de la caja.*/
+    object-fit: contain;
+}
+
+.fill{
+    /*no mantiene la relación de aspecto.*/
+    object-fit: fill;
+}
+
+.grid img{
+    width: 100%;
+    height: 100%;
+}
+
+.grid{
+    margin: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px 100px;
+    gap: 20px;
+}
+
+.grid > div {
+    background-color: skyblue;
+    border-radius: .5em;
+  }
+      
+  /*Todos los elementos <div> se estiran 
+  para llenar la fila y la columna. La imagen, 
+  sin embargo, no se expande, a menos que
+  se aplique un width
+  y height de 100%.*/
+
+  form{
+      display: flex;
+      flex-wrap: wrap;
+      margin: 30px;
+      font-size: 1.4rem;
+  }
+
+  form label{
+      margin-right: 10px;
+  }
